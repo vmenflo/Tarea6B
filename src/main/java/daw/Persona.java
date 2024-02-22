@@ -88,7 +88,7 @@ public abstract class Persona {
     }
 
     //Métodos
-    public void renovarDNI(LocalDate fechaSolicitudRenovacion) {
+    final public void renovarDNI(LocalDate fechaSolicitudRenovacion) {
         //Le añadimos 10 años desde que lo solicita
         System.out.println("..renovano dni a: " + this.nombre+" "+this.apellidos);
         this.nif.renovarDNI(fechaSolicitudRenovacion);

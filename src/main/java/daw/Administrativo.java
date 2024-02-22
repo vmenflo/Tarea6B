@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author Víctor
  */
-public class Administrativo extends Empleado {
+final public class Administrativo extends Empleado {
 
     //Atributos
     private GRUPO irpf;
@@ -63,7 +63,7 @@ public class Administrativo extends Empleado {
     @Override
     double calcularIRFP() {
         //El sueldo * el porcentaje que retiene
-        double retenido = (super.getSalario()) * (this.irpf.getIrpf());
+        double retenido = (this.getSalario()) * (this.irpf.getIrpf());
         return retenido;
     }
 
